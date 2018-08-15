@@ -13,6 +13,7 @@
 //////set up an interface in the data manager and make a nsarray property that is an array of photocatagory class
 @interface DataManager()
 @property (nonatomic)NSArray<PhotoCatagory *> *catagories;
+@property (nonatomic)NSArray<PhotoCatagory *> *catagories1;
 @end
 
 
@@ -20,22 +21,31 @@
 ////////////import the photo and photo catagory class
 
 //////initmethod after the below method is implimented and the setupcatagories method is innited
-- (instancetype)init {
+//- (instancetype)init {
+//    if (self = [super init]) {
+//        [self setupCatagories];
+//    }
+//    return self;
+//}
+-(instancetype)initWithSelectedSegmentIndex:(NSInteger)index {
     if (self = [super init]) {
-        [self setupCatagories];
+        [self setupCatagories:(NSInteger)index];
     }
     return self;
 }
 ////////set up the image catagories in this method
--(void)setupCatagories {
+-(void)setupCatagories:(NSUInteger)index {
     /////make your photocatagory arrays
+    if (index == 0) {
     PhotoCatagory *dogs = [[PhotoCatagory alloc] initWithName:@"Dog"];
-    PhotoCatagory *zen = [[PhotoCatagory alloc] initWithName:@"Zen"];
     PhotoCatagory *nature = [[PhotoCatagory alloc] initWithName:@"Nature"];
-    PhotoCatagory *ceramic = [[PhotoCatagory alloc] initWithName:@"Ceramic"];
     /////assign the arrays to catagories array
-    self.catagories = @[dogs, zen, nature, ceramic];
-    
+    self.catagories = @[dogs, nature];
+    } else {
+        PhotoCatagory *zen = [[PhotoCatagory alloc] initWithName:@"Zen"];
+        PhotoCatagory *ceramic = [[PhotoCatagory alloc] initWithName:@"Ceramic"];
+    self.catagories = @[zen, ceramic];
+    }
 }
 ///////in this method, return the count of the catagories
 -(NSInteger)numberOfSections {

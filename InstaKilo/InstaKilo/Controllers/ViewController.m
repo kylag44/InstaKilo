@@ -9,14 +9,16 @@
 #import "ViewController.h"
 
 
+
 ////////add the delegate and also remember to connect the data source and delegate from the collectionview into the view controller//////in this example i called the cell identifire Cell. i also put an image view ontop of the proto cell and made its constraints 0 0 0 0 and put an image on top
 /////also remember to import datamanager, detail view controller, the  viewcell, and the header view . drag the collection view from storyboard into the interface and create a datamanager property as well
 ////also make sure you coonect the header reuse identifire as well in story board as Cell!!!!
-@interface ViewController () <UICollectionViewDataSource>
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic) DataManager *manager;
-
+@property (nonatomic) BOOL shareEnabled;
 @end
 
 @implementation ViewController
@@ -26,7 +28,7 @@
     //////set up a title
     self.title = @"My Photos";
     ////initialize the data manager manager property
-    self.manager = [[DataManager alloc] init];
+    self.manager = [[DataManager alloc] initWithSelectedSegmentIndex:0];
 }
 /////this methos is for the collection view layout
 -(void)viewWillLayoutSubviews {
@@ -36,6 +38,24 @@
     layout.sectionHeadersPinToVisibleBounds = YES;
     CGSize size = CGSizeMake(self.collectionView.bounds.size.width/3, self.collectionView.bounds.size.width/3);
     layout.itemSize = size;
+}
+#pragma mark - segmented control
+
+- (IBAction)sementedControlPressed:(id)sender {
+    switch (self.segmentedControl.selectedSegmentIndex) {
+        case 0:
+            self.manager = [[DataManager alloc] initWithSelectedSegmentIndex:0];
+            [self.collectionView reloadData];
+            NSLog(@"pressed 1");
+            break;
+        case 1:
+            self.manager = [[DataManager alloc] initWithSelectedSegmentIndex:1];
+            [self.collectionView reloadData];
+                  NSLog(@"pressed 2");
+            break;
+        default:
+            break;
+    }
 }
 
 

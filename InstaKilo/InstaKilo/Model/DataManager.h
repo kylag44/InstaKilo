@@ -23,6 +23,6 @@
 ///////photocatagory at index path method
 - (PhotoCatagory *)photoCatagoryAtIndexPath:(NSIndexPath *)indexPath;
 
-
+-(instancetype)initWithSelectedSegmentIndex:(NSInteger)index;
 
 @end
