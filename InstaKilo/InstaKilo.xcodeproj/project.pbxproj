@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		253AC29E212485730060C22D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC29D212485730060C22D /* AppDelegate.m */; };
+		253AC2A1212485730060C22D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2A0212485730060C22D /* ViewController.m */; };
+		253AC2A4212485730060C22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253AC2A2212485730060C22D /* Main.storyboard */; };
+		253AC2A6212485740060C22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253AC2A5212485740060C22D /* Assets.xcassets */; };
+		253AC2A9212485740060C22D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253AC2A7212485740060C22D /* LaunchScreen.storyboard */; };
+		253AC2AC212485740060C22D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2AB212485740060C22D /* main.m */; };
+		253AC2B6212485740060C22D /* InstaKiloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2B5212485740060C22D /* InstaKiloTests.m */; };
+		253AC2C1212485740060C22D /* InstaKiloUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2C0212485740060C22D /* InstaKiloUITests.m */; };
+		253AC2D3212490150060C22D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2D2212490150060C22D /* DetailViewController.m */; };
+		253AC2D62124914A0060C22D /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2D52124914A0060C22D /* Photo.m */; };
+		253AC2D9212491670060C22D /* PhotoCatagory.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2D8212491670060C22D /* PhotoCatagory.m */; };
+		253AC2DC2124917E0060C22D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2DB2124917E0060C22D /* DataManager.m */; };
+		253AC2DF212493360060C22D /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2DE212493360060C22D /* PhotoCollectionViewCell.m */; };
+		253AC2E2212493540060C22D /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 253AC2E1212493540060C22D /* HeaderCollectionReusableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		253AC2B2212485740060C22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 253AC291212485730060C22D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 253AC298212485730060C22D;
+			remoteInfo = InstaKilo;
+		};
+		253AC2BD212485740060C22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 253AC291212485730060C22D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 253AC298212485730060C22D;
+			remoteInfo = InstaKilo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		253AC299212485730060C22D /* InstaKilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaKilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		253AC29C212485730060C22D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		253AC29D212485730060C22D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		253AC29F212485730060C22D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		253AC2A0212485730060C22D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		253AC2A3212485730060C22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		253AC2A5212485740060C22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		253AC2A8212485740060C22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		253AC2AA212485740060C22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253AC2AB212485740060C22D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		253AC2B1212485740060C22D /* InstaKiloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaKiloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		253AC2B5212485740060C22D /* InstaKiloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaKiloTests.m; sourceTree = "<group>"; };
+		253AC2B7212485740060C22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253AC2BC212485740060C22D /* InstaKiloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaKiloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		253AC2C0212485740060C22D /* InstaKiloUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaKiloUITests.m; sourceTree = "<group>"; };
+		253AC2C2212485750060C22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253AC2D1212490150060C22D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		253AC2D2212490150060C22D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		253AC2D42124914A0060C22D /* Photo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		253AC2D52124914A0060C22D /* Photo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		253AC2D7212491670060C22D /* PhotoCatagory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCatagory.h; sourceTree = "<group>"; };
+		253AC2D8212491670060C22D /* PhotoCatagory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCatagory.m; sourceTree = "<group>"; };
+		253AC2DA2124917D0060C22D /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		253AC2DB2124917E0060C22D /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		253AC2DD212493360060C22D /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		253AC2DE212493360060C22D /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		253AC2E0212493540060C22D /* HeaderCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		253AC2E1212493540060C22D /* HeaderCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionReusableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		253AC296212485730060C22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253AC2AE212485740060C22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253AC2B9212485740060C22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		253AC290212485730060C22D = {
+			isa = PBXGroup;
+			children = (
+				253AC29B212485730060C22D /* InstaKilo */,
+				253AC2B4212485740060C22D /* InstaKiloTests */,
+				253AC2BF212485740060C22D /* InstaKiloUITests */,
+				253AC29A212485730060C22D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		253AC29A212485730060C22D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				253AC299212485730060C22D /* InstaKilo.app */,
+				253AC2B1212485740060C22D /* InstaKiloTests.xctest */,
+				253AC2BC212485740060C22D /* InstaKiloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		253AC29B212485730060C22D /* InstaKilo */ = {
+			isa = PBXGroup;
+			children = (
+				253AC2D0212487890060C22D /* Model */,
+				253AC2CF2124877E0060C22D /* Controllers */,
+				253AC2CE2124876E0060C22D /* Views */,
+				253AC2A5212485740060C22D /* Assets.xcassets */,
+				253AC2AA212485740060C22D /* Info.plist */,
+				253AC2AB212485740060C22D /* main.m */,
+			);
+			path = InstaKilo;
+			sourceTree = "<group>";
+		};
+		253AC2B4212485740060C22D /* InstaKiloTests */ = {
+			isa = PBXGroup;
+			children = (
+				253AC2B5212485740060C22D /* InstaKiloTests.m */,
+				253AC2B7212485740060C22D /* Info.plist */,
+			);
+			path = InstaKiloTests;
+			sourceTree = "<group>";
+		};
+		253AC2BF212485740060C22D /* InstaKiloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				253AC2C0212485740060C22D /* InstaKiloUITests.m */,
+				253AC2C2212485750060C22D /* Info.plist */,
+			);
+			path = InstaKiloUITests;
+			sourceTree = "<group>";
+		};
+		253AC2CE2124876E0060C22D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				253AC2A2212485730060C22D /* Main.storyboard */,
+				253AC2A7212485740060C22D /* LaunchScreen.storyboard */,
+				253AC2DD212493360060C22D /* PhotoCollectionViewCell.h */,
+				253AC2DE212493360060C22D /* PhotoCollectionViewCell.m */,
+				253AC2E0212493540060C22D /* HeaderCollectionReusableView.h */,
+				253AC2E1212493540060C22D /* HeaderCollectionReusableView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		253AC2CF2124877E0060C22D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				253AC29F212485730060C22D /* ViewController.h */,
+				253AC2A0212485730060C22D /* ViewController.m */,
+				253AC2D1212490150060C22D /* DetailViewController.h */,
+				253AC2D2212490150060C22D /* DetailViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		253AC2D0212487890060C22D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				253AC29C212485730060C22D /* AppDelegate.h */,
+				253AC29D212485730060C22D /* AppDelegate.m */,
+				253AC2D42124914A0060C22D /* Photo.h */,
+				253AC2D52124914A0060C22D /* Photo.m */,
+				253AC2D7212491670060C22D /* PhotoCatagory.h */,
+				253AC2D8212491670060C22D /* PhotoCatagory.m */,
+				253AC2DA2124917D0060C22D /* DataManager.h */,
+				253AC2DB2124917E0060C22D /* DataManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		253AC298212485730060C22D /* InstaKilo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 253AC2C5212485750060C22D /* Build configuration list for PBXNativeTarget "InstaKilo" */;
+			buildPhases = (
+				253AC295212485730060C22D /* Sources */,
+				253AC296212485730060C22D /* Frameworks */,
+				253AC297212485730060C22D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaKilo;
+			productName = InstaKilo;
+			productReference = 253AC299212485730060C22D /* InstaKilo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		253AC2B0212485740060C22D /* InstaKiloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 253AC2C8212485750060C22D /* Build configuration list for PBXNativeTarget "InstaKiloTests" */;
+			buildPhases = (
+				253AC2AD212485740060C22D /* Sources */,
+				253AC2AE212485740060C22D /* Frameworks */,
+				253AC2AF212485740060C22D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				253AC2B3212485740060C22D /* PBXTargetDependency */,
+			);
+			name = InstaKiloTests;
+			productName = InstaKiloTests;
+			productReference = 253AC2B1212485740060C22D /* InstaKiloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		253AC2BB212485740060C22D /* InstaKiloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 253AC2CB212485750060C22D /* Build configuration list for PBXNativeTarget "InstaKiloUITests" */;
+			buildPhases = (
+				253AC2B8212485740060C22D /* Sources */,
+				253AC2B9212485740060C22D /* Frameworks */,
+				253AC2BA212485740060C22D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				253AC2BE212485740060C22D /* PBXTargetDependency */,
+			);
+			name = InstaKiloUITests;
+			productName = InstaKiloUITests;
+			productReference = 253AC2BC212485740060C22D /* InstaKiloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		253AC291212485730060C22D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Kyla ";
+				TargetAttributes = {
+					253AC298212485730060C22D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					253AC2B0212485740060C22D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 253AC298212485730060C22D;
+					};
+					253AC2BB212485740060C22D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 253AC298212485730060C22D;
+					};
+				};
+			};
+			buildConfigurationList = 253AC294212485730060C22D /* Build configuration list for PBXProject "InstaKilo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 253AC290212485730060C22D;
+			productRefGroup = 253AC29A212485730060C22D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				253AC298212485730060C22D /* InstaKilo */,
+				253AC2B0212485740060C22D /* InstaKiloTests */,
+				253AC2BB212485740060C22D /* InstaKiloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		253AC297212485730060C22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253AC2A9212485740060C22D /* LaunchScreen.storyboard in Resources */,
+				253AC2A6212485740060C22D /* Assets.xcassets in Resources */,
+				253AC2A4212485730060C22D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253AC2AF212485740060C22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253AC2BA212485740060C22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		253AC295212485730060C22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253AC2E2212493540060C22D /* HeaderCollectionReusableView.m in Sources */,
+				253AC2A1212485730060C22D /* ViewController.m in Sources */,
+				253AC2AC212485740060C22D /* main.m in Sources */,
+				253AC2DC2124917E0060C22D /* DataManager.m in Sources */,
+				253AC29E212485730060C22D /* AppDelegate.m in Sources */,
+				253AC2D62124914A0060C22D /* Photo.m in Sources */,
+				253AC2DF212493360060C22D /* PhotoCollectionViewCell.m in Sources */,
+				253AC2D9212491670060C22D /* PhotoCatagory.m in Sources */,
+				253AC2D3212490150060C22D /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253AC2AD212485740060C22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253AC2B6212485740060C22D /* InstaKiloTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253AC2B8212485740060C22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253AC2C1212485740060C22D /* InstaKiloUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		253AC2B3212485740060C22D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 253AC298212485730060C22D /* InstaKilo */;
+			targetProxy = 253AC2B2212485740060C22D /* PBXContainerItemProxy */;
+		};
+		253AC2BE212485740060C22D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 253AC298212485730060C22D /* InstaKilo */;
+			targetProxy = 253AC2BD212485740060C22D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		253AC2A2212485730060C22D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				253AC2A3212485730060C22D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		253AC2A7212485740060C22D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				253AC2A8212485740060C22D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		253AC2C3212485750060C22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		253AC2C4212485750060C22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		253AC2C6212485750060C22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8457254V38;
+				INFOPLIST_FILE = InstaKilo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kyla.InstaKilo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		253AC2C7212485750060C22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8457254V38;
+				INFOPLIST_FILE = InstaKilo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kyla.InstaKilo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		253AC2C9212485750060C22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8457254V38;
+				INFOPLIST_FILE = InstaKiloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kyla.InstaKiloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaKilo.app/InstaKilo";
+			};
+			name = Debug;
+		};
+		253AC2CA212485750060C22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8457254V38;
+				INFOPLIST_FILE = InstaKiloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kyla.InstaKiloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaKilo.app/InstaKilo";
+			};
+			name = Release;
+		};
+		253AC2CC212485750060C22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8457254V38;
+				INFOPLIST_FILE = InstaKiloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kyla.InstaKiloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaKilo;
+			};
+			name = Debug;
+		};
+		253AC2CD212485750060C22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8457254V38;
+				INFOPLIST_FILE = InstaKiloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kyla.InstaKiloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaKilo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		253AC294212485730060C22D /* Build configuration list for PBXProject "InstaKilo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				253AC2C3212485750060C22D /* Debug */,
+				253AC2C4212485750060C22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		253AC2C5212485750060C22D /* Build configuration list for PBXNativeTarget "InstaKilo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				253AC2C6212485750060C22D /* Debug */,
+				253AC2C7212485750060C22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		253AC2C8212485750060C22D /* Build configuration list for PBXNativeTarget "InstaKiloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				253AC2C9212485750060C22D /* Debug */,
+				253AC2CA212485750060C22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		253AC2CB212485750060C22D /* Build configuration list for PBXNativeTarget "InstaKiloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				253AC2CC212485750060C22D /* Debug */,
+				253AC2CD212485750060C22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 253AC291212485730060C22D /* Project object */;
+}
